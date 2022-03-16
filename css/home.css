@@ -1,0 +1,225 @@
+/**********************************/
+/* HERO */
+/**********************************/
+
+#hero {
+  background-color: #555;
+  background-image: url(../img/potential-hero-2.jpg);
+  background-size: cover;
+  background-position: right;
+  height: 70vh;
+  min-height: 20rem;
+
+  position: relative;
+}
+
+.hero__content {
+  width: 100%;
+  max-width: 40rem;
+  text-align: center;
+
+  position: absolute;
+  top: 55%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+/**********************************/
+/* BRANDS */
+/**********************************/
+
+#brands {
+  padding-bottom: 2rem;
+}
+
+.brand__container {
+  height: 100%;
+  padding: 0.3rem 0.3rem;
+
+  margin: 0.3rem 0.3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand__container img {
+  margin: 0 auto;
+
+  max-height: 2.5rem;
+}
+
+/**********************************/
+/* BESTSELLERS */
+/**********************************/
+
+#bestsellers .pure-g {
+  margin-bottom: 1rem;
+}
+
+#product-3,
+#product-4 {
+  display: none;
+}
+
+/**********************************/
+/* ABOUT US */
+/**********************************/
+
+#about-us {
+  background-color: #222;
+  padding: 0;
+
+  color: #fff;
+}
+
+.about-us__image {
+  height: 20rem;
+  min-height: 100%;
+  min-width: 100%;
+
+  background-size: cover;
+  background-position: center;
+
+  background-image: url(../img/potential-hero-2.jpg);
+}
+
+.about-us__content {
+  padding: 5rem 2rem 7rem 2rem;
+
+  word-wrap: break-word;
+}
+
+.about-us__content-title {
+  margin-left: 0;
+  text-align: left;
+}
+
+.about-us__content-title:after {
+  left: 0;
+  transform: translateX(0);
+}
+
+/**********************************/
+/* RECOMMENDATIONS */
+/**********************************/
+
+/**********************************/
+/* INFORMATION */
+/**********************************/
+
+#information {
+  background-color: #fafafa;
+}
+
+#information h2 {
+  margin-bottom: 3rem;
+}
+
+.information__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  text-align: center;
+
+  background-color: #fff;
+  border: 0.2rem solid #ddd;
+
+  margin: 0 1rem 2rem 1rem;
+  padding: 1rem 0;
+
+  overflow-y: hidden;
+
+  cursor: pointer;
+}
+
+.information__icon {
+  font-size: 3.5rem;
+  color: var(--color-darker);
+  margin-bottom: 0.3em;
+}
+
+.information__text {
+  opacity: 0;
+  max-height: 0;
+
+  transition: max-height 0.8s, opacity 0.3s;
+}
+
+.information__card-open .information__text {
+  opacity: 1;
+  max-height: 15rem;
+}
+
+.information__text p {
+  font-size: 1.2rem;
+  letter-spacing: 0.15rem;
+}
+
+.information__text-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+
+  user-select: none;
+}
+
+.information__text-title p {
+  letter-spacing: 0.09rem;
+}
+
+.information__text-daytime {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.information__text-day {
+  margin-right: 0.9rem;
+}
+
+/**********************************/
+/* MEDIA QUERIES */
+/**********************************/
+
+@media only screen and (min-width: 568px) {
+  /* . . . */
+}
+
+@media only screen and (min-width: 768px) {
+  /* Bestsellers */
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Hero */
+
+  /* Bestsellers */
+
+  #product-3 {
+    display: inline-block;
+  }
+
+  /* Information */
+
+  .information__card {
+    margin-bottom: 0;
+    word-break: break-all;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  /* Bestsellers */
+
+  #product-4 {
+    display: inline-block;
+  }
+
+  /* About Us */
+
+  .about-us__content {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}

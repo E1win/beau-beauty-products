@@ -8,9 +8,9 @@
 :root {
   /* #f6a7c1 */
 
-  --color-lighter: #6c9ff1;
+  --color-lighter: #f3d1dc;
   --color-main: #f6a7c1;
-  --color-darker: #396cbe;
+  --color-darker: #dd96ae;
   --color-darkest: #2b518e;
 
   --color-text-dark: #222;
@@ -82,6 +82,59 @@ section {
 
 h1 {
   font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+
+  margin: 0;
+
+  /* background-color: #fff; */
+}
+
+h1 > span {
+  background-color: rgb(255, 248, 254);
+  padding: 0.1rem 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+
+  position: relative;
+
+  margin-bottom: 2rem;
+
+  text-align: center;
+}
+
+h2:after {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+
+  width: 7rem;
+  border-bottom: 0.3rem solid var(--color-main);
+}
+
+.company-name {
+  font-weight: 700;
+  font-size: 112%;
+  letter-spacing: 0.3rem;
+
+  font-family: "Dancing Script", cursive;
+}
+
+.subtitle {
+  background-color: #fff;
+  padding: 1rem 1rem;
+}
+
+p {
+  max-width: 50ch;
+  letter-spacing: 0.12rem;
+  line-height: 1.7rem;
 }
 
 /* Buttons / Anchors */
@@ -96,10 +149,44 @@ a {
   color: #222;
 }
 
+.cta-btn {
+  display: inline-block;
+
+  background-color: rgb(247, 192, 237);
+  color: #111;
+
+  padding: 0.8em 1.8em;
+  padding-top: 1em;
+  margin: 2rem 0;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #fff;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+}
+
 /* Lists */
 
 ul {
   list-style: none;
+}
+
+/* Others */
+
+.hide-on-mobile {
+  display: none;
 }
 
 /**********************************/
@@ -137,7 +224,7 @@ ul {
   height: 100%;
 }
 
-.navbar__item:hover {
+.navbar__item:hover .navbar__item-link {
   color: var(--color-main);
 }
 
@@ -154,18 +241,14 @@ ul {
   justify-content: center;
 }
 
-.navbar__item-desktoplogo:hover {
-  color: var(--color-main);
-}
-
 #navbar__desktop .navbar__item-link:after {
   position: absolute;
-  top: 82%;
+  top: 78%;
   left: 50%;
   transform: translate(-50%, -100%);
   content: "";
 
-  border-bottom: 0.2rem solid var(--color-main);
+  border-bottom: 0.15rem solid var(--color-main);
   width: 0;
 
   transition: width 0.2s;
@@ -173,7 +256,7 @@ ul {
 
 #navbar__desktop .navbar__item-link:hover:after,
 #navbar__desktop .navbar__item-link:focus:after,
-.navbar__desktop-center .navbar__item-link:after {
+.current-page .navbar__item-link:after {
   width: 3rem !important;
 }
 
@@ -197,11 +280,14 @@ ul {
 .navbar__item-desktoplogo {
   padding: 0 0.7em;
   height: 100%;
-  font-size: 2.2rem;
-  text-transform: none;
+  font-size: 2rem;
+
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+
   font-family: "Dancing Script", cursive;
 
-  color: var(--color-main);
+  /* color: var(--color-main); */
 }
 
 .navbar__desktop-left {
@@ -214,10 +300,11 @@ ul {
   height: 100%;
 }
 
-#navbar__mobile .navbar__item-link:hover {
+#navbar__mobile .navbar__item-link:hover,
+.navbar__logo .navbar__item-link:hover,
+.navbar__mobile-button:hover {
   color: var(--color-main);
 }
-
 .navbar__logo {
   font-family: "Dancing Script", cursive;
   font-size: 1.9rem;
@@ -237,7 +324,7 @@ ul {
   min-height: 100vh;
   width: 0;
   max-width: 100%;
-  padding-top: 5rem;
+  padding-top: 7rem;
 
   background-color: #fff;
 
@@ -261,51 +348,205 @@ ul {
 
 #navbar__mobile-button-close p > .icon {
   padding-right: 0.5rem;
+  font-size: 180%;
 }
 
 .navbar__mobile-button p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-weight: 700;
 }
 
 .icon {
   font-size: 1.3rem;
 }
 
+.navbar__mobile-link {
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+}
+.navbar__mobile-link,
+.navbar__mobile-button-close {
+  visibility: hidden;
+}
+
+.navbar__mobile-opened .navbar__mobile-link {
+  visibility: visible;
+}
 .navbar__mobile-opened #navbar__mobile-content {
   width: 20rem;
 }
 
-.navbar__mobile-link {
-  font-size: 1rem;
-  padding: 1rem 1.5rem;
+/**********************************/
+/* FOOTER */
+/**********************************/
+
+footer {
+  background-color: #383838;
+  color: #fff;
+}
+
+footer p {
+  max-width: none;
+}
+
+.footer__main a,
+.footer__sub a {
+  color: var(--color-darker);
+  border-bottom: 0.1rem solid var(--color-darker);
+
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.footer__main a:hover,
+.footer__sub a:hover {
+  color: #fff;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+/* Call To Action */
+
+.footer__cta {
+  background-color: var(--color-lighter);
+  padding: 0;
+}
+
+.footer__cta .cta-btn {
+  border: 0.13rem solid var(--color-text-dark);
+  padding: 0.8em 3em;
+  font-size: 0.8rem;
+}
+
+/* Footer Main */
+
+.footer__main {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer__main-container {
+  padding: 1rem;
+}
+
+.footer__main-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  margin-left: 1rem;
+}
+
+.footer__main-textbox {
+  border: 0.18rem solid #f5f5f5;
+  padding: 0.5rem 1rem;
+}
+
+.footer__main-text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 0.3rem 0;
+  border-bottom: 0.15rem solid #555;
+}
+
+.footer__main-text:last-of-type {
+  border: none;
+}
+
+.footer__main-description {
+  padding-right: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+}
+
+/* Footer Sub */
+
+.footer__sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  background-color: #222;
+}
+
+.footer__sub-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.footer__sub-icon {
+  font-size: 2rem;
+  padding-left: 0.5rem;
+}
+
+.footer__sub-icon a {
+  border-bottom: none;
 }
 
 /**********************************/
 /* HERO */
 /**********************************/
 
-#hero {
-  background-color: #555;
-  background-image: url(../img/potential-hero-2.jpg);
-  background-size: cover;
-  background-position: right;
-  height: 70vh;
-  min-height: 20rem;
+/**********************************/
+/* PRODUCT */
+/**********************************/
 
-  position: relative;
+.product {
+  padding: 1rem 2rem;
+  min-width: 15rem;
 }
 
-.hero__content {
-  width: 100%;
-  max-width: 40rem;
-  text-align: center;
+.product img {
+  box-shadow: 0.05rem 0.05rem 2rem rgb(224, 224, 224);
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
 
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
+.product-textbox {
+  border-left: 0.25rem solid var(--color-main);
+  padding: 0.5rem 0.8rem 0 0.5rem;
+  margin-left: 0.8rem;
+
+  letter-spacing: 0.15rem;
+  /* text-align: center; */
+}
+
+.product-brand {
+  font-size: 0.95rem;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.product-description {
+  font-size: 0.85rem;
+}
+
+.bestselling {
+  border: 0.2rem solid rgb(241, 235, 151);
+  border-radius: 2rem;
+
+  box-shadow: 0.05rem 0.05rem 2rem rgb(241, 235, 151);
+}
+
+.bestselling:before {
+  display: block;
+  content: "Bestseller";
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
 }
 
 /**********************************/
@@ -317,6 +558,19 @@ ul {
     padding-left: 5%;
     padding-right: 5%;
   }
+
+  .hide-on-mobile {
+    display: inline-block;
+  }
+
+  h2 {
+    text-align: left;
+    margin-left: 2rem;
+  }
+  h2:after {
+    left: 1rem;
+    transform: translateX(0);
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -325,10 +579,8 @@ ul {
     padding-right: 9%;
   }
 
-  /* Hero */
-
-  #hero {
-    background-image: url(../img/potential-hero-2.jpg);
+  h1 .company-name {
+    font-size: 200%;
   }
 
   /* Navigation */
@@ -348,5 +600,22 @@ ul {
 
   .navbar__logo {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  html {
+    font-size: 25px;
+  }
+
+  .content {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media only screen and (min-width: 3840px) {
+  html {
+    font-size: 35px;
   }
 }

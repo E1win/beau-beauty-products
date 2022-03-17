@@ -13,6 +13,8 @@
   --color-darker: #dd96ae;
   --color-darkest: #2b518e;
 
+  --color-alt-main: #c9e2e4;
+
   --color-text-dark: #222;
 }
 
@@ -408,7 +410,8 @@ footer p {
 /* Call To Action */
 
 .footer__cta {
-  background-color: var(--color-lighter);
+  /* background-color: var(--color-lighter); */
+  background-color: #fff;
   padding: 0;
 }
 
@@ -539,7 +542,7 @@ footer p {
 }
 
 .product-textbox {
-  border-left: 0.25rem solid var(--color-main);
+  border-left: 0.25rem solid var(--color-alt-main);
   padding: 0.5rem 0.8rem 0 0.5rem;
   margin-left: 0.8rem;
 
@@ -584,6 +587,7 @@ footer p {
 
 #information {
   background-color: #fafafa;
+  padding-bottom: 8rem;
 }
 
 #information h2 {

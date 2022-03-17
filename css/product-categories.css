@@ -1,0 +1,16 @@
+.category__container {
+  height: 10rem;
+  margin: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border: 0.1rem solid #ddd;
+  text-align: center;
+}
+
+.category__container p {
+  max-width: unset;
+  font-size: 1.5rem;
+}

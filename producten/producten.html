@@ -1,2 +1,302 @@
-<!-- Pagina met links naar alle product-pagina's -->
-<!-- Elke categorie wordt met een foto verbeeld waarop de gebruiker kan klikken -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Normalize.css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.1/build/base-min.css"
+    />
+
+    <!-- Pure.css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.6/build/base-min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.6/build/grids-min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a3d63b76da.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SEO -->
+
+    <meta
+      name="description"
+      content="Beau - Producten - Kies een categorie"
+    ></meta>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/product-categories.css" />
+
+    <title>Beau - Productcategorieën</title>
+  </head>
+  <body>
+    <header>
+      <div id="navbar" class="content">
+        <p class="navbar__logo">
+          <a href="../index.html" class="navbar__item-link">Beau</a>
+        </p>
+        <nav id="navbar__desktop">
+          <ul class="navbar__desktop-left">
+            <li>
+              <p class="navbar__item">
+                <a href="../index.html" class="navbar__item-link">Home</a>
+              </p>
+            </li>
+
+            <li>
+              <p class="navbar__item current-page">
+                <a href="gezicht.html" class="navbar__item-link">Gezicht</a>
+              </p>
+            </li>
+            <li>
+              <p class="navbar__item">
+                <a href="haar.html" class="navbar__item-link">Haar</a>
+              </p>
+            </li>
+          </ul>
+          <div class="navbar__desktop-center">
+            <p class="navbar__item">
+              <a
+                href="../index.html"
+                class="navbar__item-link navbar__item-desktoplogo"
+                >Beau</a
+              >
+            </p>
+          </div>
+          <ul class="navbar__desktop-right">
+            <li>
+              <p class="navbar__item">
+                <a href="lichaam.html" class="navbar__item-link">Lichaam</a>
+              </p>
+            </li>
+            <li>
+              <p class="navbar__item">
+                <a href="parfum.html" class="navbar__item-link">Parfum</a>
+              </p>
+            </li>
+            <li>
+              <p class="navbar__item">
+                <a href="../contact.html" class="navbar__item-link">Contact</a>
+              </p>
+            </li>
+          </ul>
+        </nav>
+        <div id="navbar__mobile">
+          <button id="navbar__mobile-button-open" class="navbar__mobile-button">
+            <p>MENU <i class="fa-solid fa-bars icon"></i></p>
+          </button>
+          <nav id="navbar__mobile-content">
+            <button
+              id="navbar__mobile-button-close"
+              class="navbar__mobile-button"
+            >
+              <p><i class="fa-solid fa-xmark icon"></i> CLOSE</p>
+            </button>
+            <ul class="navbar__mobile-list">
+              <li>
+                <p class="navbar__item">
+                  <a
+                    href="../index.html"
+                    class="navbar__item-link navbar__mobile-link"
+                    >Home</a
+                  >
+                </p>
+              </li>
+
+              <li>
+                <p class="navbar__item">
+                  <a
+                    href="gezicht.html"
+                    class="navbar__item-link navbar__mobile-link"
+                    >Gezicht</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="navbar__item">
+                  <a
+                    href="haar.html"
+                    class="navbar__item-link navbar__mobile-link"
+                    >Haar</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="navbar__item">
+                  <a
+                    href="lichaam.html"
+                    class="navbar__item-link navbar__mobile-link"
+                    >Lichaam</a
+                  >
+                </p>
+              </li>
+
+              <li>
+                <p class="navbar__item">
+                  <a
+                    href="parfum.html"
+                    class="navbar__item-link navbar__mobile-link"
+                    >Parfum</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="navbar__item">
+                  <a
+                    href="contact.html"
+                    class="navbar__item-link navbar__mobile-link"
+                    >Contact</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="content">
+        <section id="hero">
+          <div class="hero__content">
+            <h1><span>Productcategorieën</span></h1>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section id="categories" class="content">
+          <div class="pure-g">
+              <div class="pure-u-1 pure-u-md-1-2">
+                  <a href="gezicht.html">
+                      <div class="category__container">
+                        <p class="category__title">Gezicht</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2">
+                <a href="haar.html">
+                <div class="category__container">
+                    <p class="category__title">Haar</p>
+                      
+                </div>
+            </a>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2">
+                <a href="lichaam.html">
+                <div class="category__container">
+                    <p class="category__title">Lichaam</p>
+                      
+                </div>
+                </a>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2">
+                <a href="parfum.html">
+                <div class="category__container">
+                    <p class="category__title">Parfum</p>
+                      
+                </div>
+                </a>
+              </div>
+          </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer__cta cta-container content">
+        <a href="producten/producten.html" class="cta-btn">Bekijk ons aanbod</a>
+      </section>
+      <section class="footer__main content">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div class="footer__main-container">
+              <p class="footer__main-title">Openingstijden</p>
+              <div class="footer__main-textbox">
+                <p class="footer__main-text">
+                  <span class="footer__main-description">Maandag</span
+                  ><span class="footer__main-info">8.00 - 18.00</span>
+                </p>
+                <p class="footer__main-text">
+                  <span class="footer__main-description">Dinsdag</span
+                  ><span class="footer__main-info">8.00 - 16.00</span>
+                </p>
+                <p class="footer__main-text">
+                  <span class="footer__main-description">Woensdag</span
+                  ><span class="footer__main-info">9.00 - 20.00</span>
+                </p>
+                <p class="footer__main-text">
+                  <span class="footer__main-description">Donderdag</span
+                  ><span class="footer__main-info">8.00 - 18.00</span>
+                </p>
+                <p class="footer__main-text">
+                  <span class="footer__main-description">Vrijdag</span
+                  ><span class="footer__main-info">10.00 - 21.30</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div class="footer__main-container">
+              <p class="footer__main-title">Contactinformatie</p>
+              <div class="footer__main-textbox">
+                <p class="footer__main-text">
+                  <span class="footer__main-description">Telefoonnummer </span
+                  ><span class="footer__main-info">06 12 34 56 78</span>
+                </p>
+                <p class="footer__main-text">
+                  <span class="footer__main-description">E-mailadres </span
+                  ><span class="footer__main-info">info@beau.nl</span>
+                </p>
+                <p class="footer__main-text">
+                  <span class="footer__main-description">Locatie</span
+                  ><span class="footer__main-info"
+                    >Julianalaan 97, Leeuwarden</span
+                  >
+                </p>
+                <p class="footer__main-text">
+                  <span class="footer__main-description">Website</span
+                  ><span class="footer__main-info"
+                    ><a href="https://www.beau.elwinj21.fc.school"
+                      >beau.elwinj21.fc.school</a
+                    ></span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer__sub content">
+        <p class="footer__sub-text">
+          This website was made by
+          <a href="https://www.elwinj21.fc.school">Elwin Jukema</a> for a school
+          project.
+        </p>
+        <div class="footer__sub-icons">
+          <p class="footer__sub-icon">
+            <a href="https://www.facebook.com"
+              ><i class="fa-brands fa-facebook-square"></i
+            ></a>
+          </p>
+          <p class="footer__sub-icon">
+            <a href="https://www.instagram.com"
+              ><i class="fa-brands fa-instagram-square"></i
+            ></a>
+          </p>
+        </div>
+      </section>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

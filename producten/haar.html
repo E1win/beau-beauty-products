@@ -1,81 +1,456 @@
-<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4" id="product-1">
-  <div class="product">
-    <a href="producten/parfum.html#product-1">
-      <picture>
-        <source
-          media="(min-width: 1024px)"
-          srcset="img/producten/Chanel+Coco+Mademoiselle.webp"
-        />
-        <img
-          src="img/producten/Mobile+Chanel+Coco+Mademoiselle.webp"
-          alt="Chanel COCO MADEMOISELLE Parfume Bottle."
-          class="pure-img"
-          loading="lazy"
-          decoding="async"
-        />
-      </picture>
-    </a>
-    <div class="product-textbox">
-      <p class="product-brand">CHANEL</p>
-      <p class="product-name">COCO MADEMOISELLE</p>
-      <p class="product-description">
-        Een vrouwelijk amberachtig parfum met een heel eigen, verrassend fris
-        karakter.
-      </p>
-    </div>
-  </div>
-</div>
-<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4" id="product-2">
-  <div class="product">
-    <a href="producten/lichaam.html#product-2">
-      <img
-        src="img/producten/Clinique+Jumbo+Moisture+Surge.webp"
-        alt="Clinique Jumbo Moisture Surge."
-        class="pure-img"
-      />
-    </a>
-    <div class="product-textbox">
-      <p class="product-brand">Clinique</p>
-      <p class="product-name">Jumbo Moisture Surge</p>
-      <p class="product-description">
-        De met antioxidanten verrijkte watergel geeft de huid een intense boost.
-      </p>
-    </div>
-  </div>
-</div>
-<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4" id="product-3">
-  <div class="product">
-    <a href="producten/lichaam.html#product-2">
-      <img
-        src="img/producten/Clinique+Jumbo+Moisture+Surge.webp"
-        alt="Clinique Jumbo Moisture Surge."
-        class="pure-img"
-      />
-    </a>
-    <div class="product-textbox">
-      <p class="product-brand">Clinique</p>
-      <p class="product-name">Jumbo Moisture Surge</p>
-      <p class="product-description">
-        De met antioxidanten verrijkte watergel geeft de huid een intense boost.
-      </p>
-    </div>
-  </div>
-</div>
-<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4" id="product-4">
-  <div class="product">
-    <a href="producten/lichaam.html#product-2">
-      <img
-        src="img/producten/Clinique+Jumbo+Moisture+Surge.webp"
-        alt="Clinique Jumbo Moisture Surge."
-        class="pure-img"
-      />
-    </a>
-    <div class="product-textbox">
-      <p class="product-brand">Clinique</p>
-      <p class="product-name">Jumbo Moisture Surge</p>
-      <p class="product-description">
-        De met antioxidanten verrijkte watergel geeft de huid een intense boost.
-      </p>
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Normalize.css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.1/build/base-min.css"
+    />
+
+    <!-- Pure.css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.6/build/base-min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.6/build/grids-min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a3d63b76da.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SEO -->
+
+    <main
+      name="description"
+      content="Beau - Haarproducten - De beste haarproducten in Leeuwarden vind je hier!"
+    ></main>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+
+    <title>Beau - Haarproducten</title>
+  </head>
+  <body>
+    <header>
+      <div id="navbar" class="content">
+        <p class="navbar__logo">
+          <a href="../index.html" class="navbar__item-link">Beau</a>
+        </p>
+        <nav id="navbar__desktop">
+          <ul class="navbar__desktop-left">
+            <li>
+              <p class="navbar__item">
+                <a href="../index.html" class="navbar__item-link">Home</a>
+              </p>
+            </li>
+
+            <li>
+              <p class="navbar__item">
+                <a href="gezicht.html" class="navbar__item-link">Gezicht</a>
+              </p>
+            </li>
+            <li>
+              <p class="navbar__item current-page">
+                <a href="haar.html" class="navbar__item-link">Haar</a>
+              </p>
+            </li>
+          </ul>
+          <div class="navbar__desktop-center">
+            <p class="navbar__item">
+              <a
+                href="../index.html"
+                class="navbar__item-link navbar__item-desktoplogo"
+                >Beau</a
+              >
+            </p>
+          </div>
+          <ul class="navbar__desktop-right">
+            <li>
+              <p class="navbar__item">
+                <a href="lichaam.html" class="navbar__item-link">Lichaam</a>
+              </p>
+            </li>
+            <li>
+              <p class="navbar__item">
+                <a href="parfum.html" class="navbar__item-link">Parfum</a>
+              </p>
+            </li>
+            <li>
+              <p class="navbar__item">
+                <a href="../contact.html" class="navbar__item-link">Contact</a>
+              </p>
+            </li>
+          </ul>
+        </nav>
+        <div id="navbar__mobile">
+          <button id="navbar__mobile-button-open" class="navbar__mobile-button">
+            <p>MENU <i class="fa-solid fa-bars icon"></i></p>
+          </button>
+          <nav id="navbar__mobile-content">
+            <button
+              id="navbar__mobile-button-close"
+              class="navbar__mobile-button"
+            >
+              <p><i class="fa-solid fa-xmark icon"></i> CLOSE</p>
+            </button>
+            <ul class="navbar__mobile-list">
+              <li>
+                <p class="navbar__item">
+                  <a
+                    href="../index.html"
+                    class="navbar__item-link navbar__mobile-link"
+                    >Home</a
+                  >
+                </p>
+              </li>
+
+              <li>
+                <p class="navbar__item">
+                  <a
+                    href="gezicht.html"
+                    class="navbar__item-link navbar__mobile-link"
+                    >Gezicht</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="navbar__item">
+                  <a
+                    href="haar.html"
+                    class="navbar__item-link navbar__mobile-link"
+                    >Haar</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="navbar__item">
+                  <a
+                    href="lichaam.html"
+                    class="navbar__item-link navbar__mobile-link"
+                    >Lichaam</a
+                  >
+                </p>
+              </li>
+
+              <li>
+                <p class="navbar__item">
+                  <a
+                    href="parfum.html"
+                    class="navbar__item-link navbar__mobile-link"
+                    >Parfum</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="navbar__item">
+                  <a
+                    href="contact.html"
+                    class="navbar__item-link navbar__mobile-link"
+                    >Contact</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="content">
+        <section id="hero">
+          <div class="hero__content">
+            <h1><span>Haarproducten</span></h1>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main class="content">
+      <section id="products">
+        <div class="product" id="product-id-1">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../img/producten/Parfum/Chanel+Coco+Mademoiselle.webp"
+            />
+            <img
+              src="../img/producten/Parfum/Mobile+Chanel+Coco+Mademoiselle.webp"
+              alt="Chanel COCO MADEMOISELLE Parfume Bottle."
+              loading="lazy"
+              class="product-image"
+              decoding="async"
+            />
+          </picture>
+          <div class="product-textbox">
+            <p class="product-brand">CHANEL</p>
+            <p class="product-name">COCO MADEMOISELLE</p>
+            <p class="product-description">
+              Een vrouwelijk amberachtig parfum met een heel eigen, verrassend
+              fris karakter.
+            </p>
+          </div>
+        </div>
+        <div class="product" id="product-id-2">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="
+                ../img/producten/Lichaam/Clinique+Jumbo+Moisture+Surge.webp
+              "
+            />
+            <img
+              src="../img/producten/Lichaam/Mobile+Clinique+Jumbo+Moisture+Surge.webp"
+              alt="Clinique Jumbo Moisture Surge."
+              loading="lazy"
+              class="product-image"
+              decoding="async"
+            />
+          </picture>
+          <div class="product-textbox">
+            <p class="product-brand">Clinique</p>
+            <p class="product-name">Jumbo Moisture Surge</p>
+            <p class="product-description">
+              De met antioxidanten verrijkte watergel geeft de huid een intense
+              boost.
+            </p>
+          </div>
+        </div>
+        <div class="product" id="product-id-3">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../img/producten/Lichaam/Chanel+LeLift.webp"
+            />
+            <img
+              src="../img/producten/Lichaam/Mobile+Chanel+LeLift.webp"
+              alt="Chanel Le Lift."
+              loading="lazy"
+              class="product-image"
+              decoding="async"
+            />
+          </picture>
+          <div class="product-textbox">
+            <p class="product-brand">CHANEL</p>
+            <p class="product-name">LE LIFT CRÈME DE NUIT</p>
+            <p class="product-description">
+              Gladstrijken. Verstevigen. De huid voelt als nieuw aan.
+            </p>
+          </div>
+        </div>
+        <div class="product" id="product-id-4">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../img/producten/Lichaam/Chanel+N1.webp"
+            />
+            <img
+              src="../img/producten/Lichaam/Mobile+Chanel+N1.webp"
+              alt="Chanel N1."
+              loading="lazy"
+              class="product-image"
+              decoding="async"
+            />
+          </picture>
+          <div class="product-textbox">
+            <p class="product-brand">Chanel</p>
+            <p class="product-name">N1 CRÈME REVITALISANTE</p>
+            <p class="product-description">
+              Gladstrijken. Voller maken. Voor een comfortabele huid.
+            </p>
+          </div>
+        </div>
+        <div class="product" id="product-id-5">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../img/producten/Parfum/Chanel+N19.webp"
+            />
+            <img
+              src="../img/producten/Parfum/Mobile+Chanel+N19.webp"
+              alt="Chanel N19."
+              loading="lazy"
+              class="product-image"
+              decoding="async"
+            />
+          </picture>
+          <div class="product-textbox">
+            <p class="product-brand">CHANEL</p>
+            <p class="product-name">N19</p>
+            <p class="product-description">
+              Een gedurfd parfum met een uitgesproken karakter.
+            </p>
+          </div>
+        </div>
+        <div class="product" id="product-id-6">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../img/producten/Lichaam/Chanel+UV+ESSENTIEL.webp"
+            />
+            <img
+              src="../img/producten/Lichaam/Mobile+Chanel+UV+ESSENTIEL.webp"
+              alt="Chanel UV ESSENTIEL."
+              loading="lazy"
+              class="product-image"
+              decoding="async"
+            />
+          </picture>
+          <div class="product-textbox">
+            <p class="product-brand">CHANEL</p>
+            <p class="product-name">UV ESSENTIEL</p>
+            <p class="product-description">
+              De unieke, sensoriële gel-crèmetextuur combineert de lichtheid van
+              een gel met het comfort van een crème.
+            </p>
+          </div>
+        </div>
+        <div class="product" id="product-id-7">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../img/producten/Lichaam/Chanel+Sublimage.webp"
+            />
+            <img
+              src="../img/producten/Lichaam/Mobile+Chanel+Sublimage.webp"
+              alt="Chanel Sublimage."
+              loading="lazy"
+              class="product-image"
+              decoding="async"
+            />
+          </picture>
+          <div class="product-textbox">
+            <p class="product-brand">CHANEL</p>
+            <p class="product-name">SUBLIMAGE LA CRÈME CORPS ET DÉCOLLETÉ</p>
+            <p class="product-description">
+              Regenererende crème voor het lichaam voor een stralende huid.
+            </p>
+          </div>
+        </div>
+        <div class="product" id="product-id-8">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../img/producten/Parfum/Chanel+Chance.webp"
+            />
+            <img
+              src="../img/producten/Parfum/Mobile+Chanel+Chance.webp"
+              alt="Chanel Chance."
+              loading="lazy"
+              class="product-image"
+              decoding="async"
+            />
+          </picture>
+          <div class="product-textbox">
+            <p class="product-brand">CHANEL</p>
+            <p class="product-name">CHANCE</p>
+            <p class="product-description">
+              Een bloemig parfum in een flacon met ronde lijnen.
+            </p>
+          </div>
+        </div>
+        <div class="product filler"></div>
+        <div class="product filler"></div>
+        <div class="product filler"></div>
+        <div class="product filler"></div>
+        <div class="product filler"></div>
+        <div class="product filler"></div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer__cta cta-container content">
+        <a href="producten/producten.html" class="cta-btn">Bekijk ons aanbod</a>
+      </section>
+      <section class="footer__main content">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div class="footer__main-container">
+              <p class="footer__main-title">Openingstijden</p>
+              <div class="footer__main-textbox">
+                <p class="footer__main-text">
+                  <span class="footer__main-description">Maandag</span
+                  ><span class="footer__main-info">8.00 - 18.00</span>
+                </p>
+                <p class="footer__main-text">
+                  <span class="footer__main-description">Dinsdag</span
+                  ><span class="footer__main-info">8.00 - 16.00</span>
+                </p>
+                <p class="footer__main-text">
+                  <span class="footer__main-description">Woensdag</span
+                  ><span class="footer__main-info">9.00 - 20.00</span>
+                </p>
+                <p class="footer__main-text">
+                  <span class="footer__main-description">Donderdag</span
+                  ><span class="footer__main-info">8.00 - 18.00</span>
+                </p>
+                <p class="footer__main-text">
+                  <span class="footer__main-description">Vrijdag</span
+                  ><span class="footer__main-info">10.00 - 21.30</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div class="footer__main-container">
+              <p class="footer__main-title">Contactinformatie</p>
+              <div class="footer__main-textbox">
+                <p class="footer__main-text">
+                  <span class="footer__main-description">Telefoonnummer </span
+                  ><span class="footer__main-info">06 12 34 56 78</span>
+                </p>
+                <p class="footer__main-text">
+                  <span class="footer__main-description">E-mailadres </span
+                  ><span class="footer__main-info">info@beau.nl</span>
+                </p>
+                <p class="footer__main-text">
+                  <span class="footer__main-description">Locatie</span
+                  ><span class="footer__main-info"
+                    >Julianalaan 97, Leeuwarden</span
+                  >
+                </p>
+                <p class="footer__main-text">
+                  <span class="footer__main-description">Website</span
+                  ><span class="footer__main-info"
+                    ><a href="https://www.beau.elwinj21.fc.school"
+                      >beau.elwinj21.fc.school</a
+                    ></span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer__sub content">
+        <p class="footer__sub-text">
+          This website was made by
+          <a href="https://www.elwinj21.fc.school">Elwin Jukema</a> for a school
+          project.
+        </p>
+        <div class="footer__sub-icons">
+          <p class="footer__sub-icon">
+            <a href="https://www.facebook.com"
+              ><i class="fa-brands fa-facebook-square"></i
+            ></a>
+          </p>
+          <p class="footer__sub-icon">
+            <a href="https://www.instagram.com"
+              ><i class="fa-brands fa-instagram-square"></i
+            ></a>
+          </p>
+        </div>
+      </section>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

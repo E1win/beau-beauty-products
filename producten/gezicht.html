@@ -35,11 +35,12 @@
 
     <main
       name="description"
-      content="De beste beauty-producten vind je bij Beau. Bezoek ons snel bij Julianalaan 97, Leeuwarden"
+      content="Beau - Gezichtsproducten - De beste gezichtsproducten in Leeuwarden vind je hier!"
     ></main>
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/products.css" />
 
     <title>Beau - Gezichtsproducten</title>
   </head>
@@ -47,32 +48,32 @@
     <header>
       <div id="navbar" class="content">
         <p class="navbar__logo">
-          <a href="#hero" class="navbar__item-link">Beau</a>
+          <a href="../index.html" class="navbar__item-link">Beau</a>
         </p>
         <nav id="navbar__desktop">
           <ul class="navbar__desktop-left">
             <li>
-              <p class="navbar__item current-page">
-                <a href="#hero" class="navbar__item-link">Home</a>
+              <p class="navbar__item">
+                <a href="../index.html" class="navbar__item-link">Home</a>
               </p>
             </li>
 
             <li>
-              <p class="navbar__item">
-                <a href="producten/gezicht.html" class="navbar__item-link"
-                  >Gezicht</a
-                >
+              <p class="navbar__item current-page">
+                <a href="gezicht.html" class="navbar__item-link">Gezicht</a>
               </p>
             </li>
             <li>
               <p class="navbar__item">
-                <a href="producten/haar.html" class="navbar__item-link">Haar</a>
+                <a href="haar.html" class="navbar__item-link">Haar</a>
               </p>
             </li>
           </ul>
           <div class="navbar__desktop-center">
             <p class="navbar__item">
-              <a href="#hero" class="navbar__item-link navbar__item-desktoplogo"
+              <a
+                href="../index.html"
+                class="navbar__item-link navbar__item-desktoplogo"
                 >Beau</a
               >
             </p>
@@ -80,21 +81,17 @@
           <ul class="navbar__desktop-right">
             <li>
               <p class="navbar__item">
-                <a href="producten/lichaam.html" class="navbar__item-link"
-                  >Lichaam</a
-                >
+                <a href="lichaam.html" class="navbar__item-link">Lichaam</a>
               </p>
             </li>
             <li>
               <p class="navbar__item">
-                <a href="producten/parfum.html" class="navbar__item-link"
-                  >Parfum</a
-                >
+                <a href="parfum.html" class="navbar__item-link">Parfum</a>
               </p>
             </li>
             <li>
               <p class="navbar__item">
-                <a href="contact.html" class="navbar__item-link">Contact</a>
+                <a href="../contact.html" class="navbar__item-link">Contact</a>
               </p>
             </li>
           </ul>
@@ -113,7 +110,9 @@
             <ul class="navbar__mobile-list">
               <li>
                 <p class="navbar__item">
-                  <a href="#hero" class="navbar__item-link navbar__mobile-link"
+                  <a
+                    href="../index.html"
+                    class="navbar__item-link navbar__mobile-link"
                     >Home</a
                   >
                 </p>
@@ -122,7 +121,7 @@
               <li>
                 <p class="navbar__item">
                   <a
-                    href="producten/gezicht.html"
+                    href="gezicht.html"
                     class="navbar__item-link navbar__mobile-link"
                     >Gezicht</a
                   >
@@ -131,7 +130,7 @@
               <li>
                 <p class="navbar__item">
                   <a
-                    href="producten/haar.html"
+                    href="haar.html"
                     class="navbar__item-link navbar__mobile-link"
                     >Haar</a
                   >
@@ -140,7 +139,7 @@
               <li>
                 <p class="navbar__item">
                   <a
-                    href="producten/lichaam.html"
+                    href="lichaam.html"
                     class="navbar__item-link navbar__mobile-link"
                     >Lichaam</a
                   >
@@ -150,7 +149,7 @@
               <li>
                 <p class="navbar__item">
                   <a
-                    href="producten/parfum.html"
+                    href="parfum.html"
                     class="navbar__item-link navbar__mobile-link"
                     >Parfum</a
                   >
@@ -172,18 +171,202 @@
       <div class="content">
         <section id="hero">
           <div class="hero__content">
-            <h1><span>De beste beauty-producten</span></h1>
-            <h1>
-              <span>vind je bij <span class="company-name">Beau</span></span>
-            </h1>
-            <a href="producten/producten.html" class="cta-btn"
-              >Bekijk ons assortiment</a
-            >
+            <h1><span>Gezichtsproducten</span></h1>
           </div>
         </section>
       </div>
     </header>
-    <main></main>
+    <main class="content">
+      <section id="products">
+        <div class="product" id="product-id-1">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../img/producten/Parfum/Chanel+Coco+Mademoiselle.webp"
+            />
+            <img
+              src="../img/producten/Parfum/Mobile+Chanel+Coco+Mademoiselle.webp"
+              alt="Chanel COCO MADEMOISELLE Parfume Bottle."
+              loading="lazy"
+              class="product-image"
+              decoding="async"
+            />
+          </picture>
+          <div class="product-textbox">
+            <p class="product-brand">CHANEL</p>
+            <p class="product-name">COCO MADEMOISELLE</p>
+            <p class="product-description">
+              Een vrouwelijk amberachtig parfum met een heel eigen, verrassend
+              fris karakter.
+            </p>
+          </div>
+        </div>
+        <div class="product" id="product-id-2">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="
+                ../img/producten/Lichaam/Clinique+Jumbo+Moisture+Surge.webp
+              "
+            />
+            <img
+              src="../img/producten/Lichaam/Mobile+Clinique+Jumbo+Moisture+Surge.webp"
+              alt="Clinique Jumbo Moisture Surge."
+              loading="lazy"
+              class="product-image"
+              decoding="async"
+            />
+          </picture>
+          <div class="product-textbox">
+            <p class="product-brand">Clinique</p>
+            <p class="product-name">Jumbo Moisture Surge</p>
+            <p class="product-description">
+              De met antioxidanten verrijkte watergel geeft de huid een intense
+              boost.
+            </p>
+          </div>
+        </div>
+        <div class="product" id="product-id-3">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../img/producten/Lichaam/Chanel+LeLift.webp"
+            />
+            <img
+              src="../img/producten/Lichaam/Mobile+Chanel+LeLift.webp"
+              alt="Chanel Le Lift."
+              loading="lazy"
+              class="product-image"
+              decoding="async"
+            />
+          </picture>
+          <div class="product-textbox">
+            <p class="product-brand">CHANEL</p>
+            <p class="product-name">LE LIFT CRÈME DE NUIT</p>
+            <p class="product-description">
+              Gladstrijken. Verstevigen. De huid voelt als nieuw aan.
+            </p>
+          </div>
+        </div>
+        <div class="product" id="product-id-4">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../img/producten/Lichaam/Chanel+N1.webp"
+            />
+            <img
+              src="../img/producten/Lichaam/Mobile+Chanel+N1.webp"
+              alt="Chanel N1."
+              loading="lazy"
+              class="product-image"
+              decoding="async"
+            />
+          </picture>
+          <div class="product-textbox">
+            <p class="product-brand">Chanel</p>
+            <p class="product-name">N1 CRÈME REVITALISANTE</p>
+            <p class="product-description">
+              Gladstrijken. Voller maken. Voor een comfortabele huid.
+            </p>
+          </div>
+        </div>
+        <div class="product" id="product-id-5">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../img/producten/Parfum/Chanel+N19.webp"
+            />
+            <img
+              src="../img/producten/Parfum/Mobile+Chanel+N19.webp"
+              alt="Chanel N19."
+              loading="lazy"
+              class="product-image"
+              decoding="async"
+            />
+          </picture>
+          <div class="product-textbox">
+            <p class="product-brand">CHANEL</p>
+            <p class="product-name">N19</p>
+            <p class="product-description">
+              Een gedurfd parfum met een uitgesproken karakter.
+            </p>
+          </div>
+        </div>
+        <div class="product" id="product-id-6">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../img/producten/Lichaam/Chanel+UV+ESSENTIEL.webp"
+            />
+            <img
+              src="../img/producten/Lichaam/Mobile+Chanel+UV+ESSENTIEL.webp"
+              alt="Chanel UV ESSENTIEL."
+              loading="lazy"
+              class="product-image"
+              decoding="async"
+            />
+          </picture>
+          <div class="product-textbox">
+            <p class="product-brand">CHANEL</p>
+            <p class="product-name">UV ESSENTIEL</p>
+            <p class="product-description">
+              De unieke, sensoriële gel-crèmetextuur combineert de lichtheid van
+              een gel met het comfort van een crème.
+            </p>
+          </div>
+        </div>
+        <div class="product" id="product-id-7">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../img/producten/Lichaam/Chanel+Sublimage.webp"
+            />
+            <img
+              src="../img/producten/Lichaam/Mobile+Chanel+Sublimage.webp"
+              alt="Chanel Sublimage."
+              loading="lazy"
+              class="product-image"
+              decoding="async"
+            />
+          </picture>
+          <div class="product-textbox">
+            <p class="product-brand">CHANEL</p>
+            <p class="product-name">SUBLIMAGE LA CRÈME CORPS ET DÉCOLLETÉ</p>
+            <p class="product-description">
+              Regenererende crème voor het lichaam voor een stralende huid.
+            </p>
+          </div>
+        </div>
+        <div class="product" id="product-id-8">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../img/producten/Parfum/Chanel+Chance.webp"
+            />
+            <img
+              src="../img/producten/Parfum/Mobile+Chanel+Chance.webp"
+              alt="Chanel Chance."
+              loading="lazy"
+              class="product-image"
+              decoding="async"
+            />
+          </picture>
+          <div class="product-textbox">
+            <p class="product-brand">CHANEL</p>
+            <p class="product-name">CHANCE</p>
+            <p class="product-description">
+              Een bloemig parfum in een flacon met ronde lijnen.
+            </p>
+          </div>
+        </div>
+        <div class="product filler"></div>
+        <div class="product filler"></div>
+        <div class="product filler"></div>
+        <div class="product filler"></div>
+        <div class="product filler"></div>
+        <div class="product filler"></div>
+      </section>
+    </main>
     <footer>
       <section class="footer__cta cta-container content">
         <a href="producten/producten.html" class="cta-btn">Bekijk ons aanbod</a>

@@ -1,0 +1,25 @@
+#products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filler {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 0;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  #products {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}

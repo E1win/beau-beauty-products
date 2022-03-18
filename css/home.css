@@ -3,9 +3,10 @@
 /**********************************/
 
 #hero {
-  background-image: url(../img/hero.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
+    url(../img/hero.webp);
   background-size: cover;
-  background-position: right;
+  background-position: 52%;
   height: 65vh;
   min-height: 20rem;
 
@@ -21,13 +22,20 @@
   transform: translate(0, -50%);
 }
 
-h1 {
-  font-size: 2rem;
+.hero__desktoptext {
+  display: none;
 }
 
-h1 > span {
-  background-color: rgb(255, 248, 254);
-  padding: 0.1rem 2rem;
+h1 {
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: 0.25rem;
+  font-weight: 500;
+}
+
+.company-name {
+  font-size: 250%;
+  position: relative;
 }
 
 /**********************************/
@@ -132,7 +140,30 @@ h1 > span {
 }
 
 @media only screen and (min-width: 768px) {
-  /* . . . */
+  /* Text */
+  h1 {
+    font-size: 2rem;
+    color: #222;
+  }
+
+  h1 > span {
+    background-color: rgb(255, 248, 254);
+    padding: 0.1rem 2rem;
+  }
+
+  h1 .company-name {
+    font-size: 200%;
+  }
+
+  /* Hero */
+
+  #hero {
+    background-image: url(../img/hero.webp);
+  }
+
+  .hero__desktoptext {
+    display: inline-block;
+  }
 }
 
 @media only screen and (min-width: 1024px) {

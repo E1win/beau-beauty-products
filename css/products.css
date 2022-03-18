@@ -1,4 +1,4 @@
-#products {
+.products__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -16,6 +16,22 @@
 .product img {
   max-width: 100%;
 }
+
+/* .hero-gezicht {
+
+}
+
+.hero-haar {
+
+}
+
+.hero-lichaam {
+
+}
+
+.hero-parfum {
+  
+} */
 
 @media only screen and (min-width: 1024px) {
   #products {

@@ -1,0 +1,109 @@
+/**********************************/
+/* HERO */
+/**********************************/
+
+#hero {
+  background: linear-gradient(rgba(65, 55, 3, 0.2), rgba(65, 55, 3, 0.2)),
+    url(../img/hero.webp);
+  background-size: cover;
+  background-position: 52%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+/**********************************/
+/* CONTACT */
+/**********************************/
+
+.contact__container {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.contact__container h2 {
+  margin-bottom: 2.5rem;
+}
+
+.contact__inputscontainer {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contact__submitcontainer,
+.contact__inputscontainer {
+  padding: 0 0.5rem;
+}
+
+label {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  padding-left: 0.5rem;
+}
+
+.contact__input {
+  flex: 1;
+  min-width: 100%;
+  padding: 0.5rem 0.5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.8rem;
+
+  outline: none;
+  border: 0.12rem solid #ddd;
+}
+
+.contact__input:hover,
+.contact__input:focus {
+  border-color: var(--color-darker);
+}
+
+.contact__submit {
+  border: none;
+  padding: 0.6em 0;
+  background-color: #222;
+  color: #fff;
+
+  display: block;
+
+  width: 100%;
+
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact__submit:hover,
+.contact__submit:focus {
+  background-color: #eee;
+  color: #000;
+}
+
+/**********************************/
+/* MEDIA QUERIES */
+/**********************************/
+
+@media only screen and (min-width: 768px) {
+  #hero {
+    padding-left: 20%;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  .contact__submit {
+    padding: 0.5em 4em;
+    width: auto;
+    margin: 0.7rem auto 0 auto;
+  }
+}

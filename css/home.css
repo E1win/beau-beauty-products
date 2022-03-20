@@ -3,7 +3,9 @@
 /**********************************/
 
 #hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
+  /* background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
+    url(../img/hero.webp); */
+  background: linear-gradient(rgba(65, 55, 3, 0.2), rgba(65, 55, 3, 0.2)),
     url(../img/hero.webp);
   background-size: cover;
   background-position: 52%;

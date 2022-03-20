@@ -114,13 +114,14 @@
           </ul>
         </nav>
         <div id="navbar__mobile">
-          <button id="navbar__mobile-button-open" class="navbar__mobile-button">
+          <button id="navbar__mobile-button-open" class="navbar__mobile-button" aria-label="Open Mobile Menu.">
             <p>MENU <i class="fa-solid fa-bars icon"></i></p>
           </button>
           <nav id="navbar__mobile-content">
             <button
               id="navbar__mobile-button-close"
               class="navbar__mobile-button"
+              aria-label="Close Mobile Menu."
             >
               <p><i class="fa-solid fa-xmark icon"></i> CLOSE</p>
             </button>
@@ -187,18 +188,40 @@
       </div>
       <div class="content">
         <section id="hero">
-          <div class="hero__content">
-            <h1><span>Contact</span></h1>
-          </div>
+            <h1>Contact</h1>
         </section>
       </div>
     </header>
     <main>
+      <section id="contact" class="content">
+        <div class="contact__container">
+          <h2>Neem contact op</h2>
+          <form action="contact.html" method="get">
+          <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="contact__inputscontainer">
+                <input type="text" id="name" class="contact__input" name="name" placeholder="Naam" minlength="3" required>
+                <input type="email" id="email" class="contact__input" name="email" placeholder="E-mailadres" required>
+                <input type="text" id="phonenumber" class="contact__input" name="phonenumber" placeholder="Telefoonnummer (optioneel)">
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="contact__inputscontainer">
+                <textarea name="message" class="contact__input" id="message" cols="35" rows="8" placeholder="Typ hier uw bericht." minlength="10" maxlength="1000" required></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="contact__submitcontainer">
+            <input type="submit" class="btn contact__submit" value="Verstuur">
+          </div>
+        </form>
+        </div>
+      </section>
       <section id="information" class="content">
         <h2>Contactinformatie</h2>
         <div class="pure-g">
           <div class="pure-u-1 pure-u-sm-1-2 pure-u-lg-1-4">
-            <div class="information__card">
+            <div class="information__card" tabindex="0">
               <div class="information__icon">
                 <p>
                   <i class="fa-solid fa-phone"></i>
@@ -213,7 +236,7 @@
             </div>
           </div>
           <div class="pure-u-1 pure-u-sm-1-2 pure-u-lg-1-4">
-            <div class="information__card">
+            <div class="information__card" tabindex="0">
               <div class="information__icon">
                 <p>
                   <i class="fa-solid fa-clock"></i>
@@ -247,7 +270,7 @@
             </div>
           </div>
           <div class="pure-u-1 pure-u-sm-1-2 pure-u-lg-1-4">
-            <div class="information__card">
+            <div class="information__card" tabindex="0">
               <div class="information__icon">
                 <p>
                   <i class="fa-solid fa-envelope"></i>
@@ -262,7 +285,7 @@
             </div>
           </div>
           <div class="pure-u-1 pure-u-sm-1-2 pure-u-lg-1-4">
-            <div class="information__card">
+            <div class="information__card" tabindex="0">
               <div class="information__icon">
                 <p>
                   <i class="fa-solid fa-location-dot"></i>

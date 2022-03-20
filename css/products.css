@@ -13,16 +13,13 @@
   height: 0;
 }
 
-.product img {
-  max-width: 100%;
+.hero-gezicht {
+  background-image: url(../img/gezicht-hero.webp) !important;
+  background-position: 0 8% !important;
 }
-
-/* .hero-gezicht {
-
-}
-
+/*
 .hero-haar {
-
+  
 }
 
 .hero-lichaam {

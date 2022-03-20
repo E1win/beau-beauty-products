@@ -382,7 +382,7 @@ ul {
 /**********************************/
 
 footer {
-  background-color: #2c2c2c;
+  background-color: #2a2a2a;
   color: #fff;
 }
 
@@ -402,20 +402,6 @@ footer p {
 .footer__sub a:hover {
   color: #fff;
   border-color: rgba(0, 0, 0, 0);
-}
-
-/* Call To Action */
-
-.footer__cta {
-  /* background-color: var(--color-lighter); */
-  background-color: #fff;
-  padding: 0;
-}
-
-.footer__cta .cta-btn {
-  border: 0.13rem solid var(--color-text-dark);
-  padding: 0.8em 3em;
-  font-size: 0.8rem;
 }
 
 /* Footer Main */
@@ -500,7 +486,7 @@ footer p {
     url(../img/hero.webp); */
   background-size: cover;
   background-position: right;
-  height: 30vh;
+  height: 25vh;
   min-height: 10rem;
 
   /* Navigationbar compensation */
@@ -530,14 +516,15 @@ footer p {
   max-width: 25rem;
 }
 
-.product img {
-  box-shadow: 0.05rem 0.05rem 2rem rgb(224, 224, 224);
+.product-image {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   margin-bottom: 1rem;
-}
 
-.product-image {
-  max-width: 100%;
+  box-shadow: 0.05rem 0.05rem 2rem rgb(224, 224, 224);
 }
 
 .product-textbox {
@@ -546,7 +533,6 @@ footer p {
   margin-left: 0.8rem;
 
   letter-spacing: 0.15rem;
-  /* text-align: center; */
 }
 
 .product-brand {
@@ -564,10 +550,14 @@ footer p {
 }
 
 .bestselling {
-  border: 0.2rem solid rgb(241, 235, 151);
-  border-radius: 2rem;
+  border: 0.3rem solid rgb(241, 235, 151);
+  border-radius: 0.7rem;
 
-  box-shadow: 0.05rem 0.05rem 2rem rgb(241, 235, 151);
+  /* box-shadow: 0.05rem 0.05rem 2rem rgb(241, 235, 151); */
+}
+
+.bestselling .product-textbox {
+  border-color: rgb(241, 235, 151);
 }
 
 .bestselling:before {

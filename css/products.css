@@ -17,18 +17,21 @@
   background-image: url(../img/gezicht-hero.webp) !important;
   background-position: 0 8% !important;
 }
-/*
+
 .hero-haar {
-  
+  background-image: url(../img/haar-hero.webp) !important;
+  background-position: 0 23% !important;
 }
 
 .hero-lichaam {
-
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../img/lichaam-hero.webp) !important;
+  background-position: 0 38% !important;
 }
 
 .hero-parfum {
-  
-} */
+  background-image: url(../img/parfum-hero.webp) !important;
+}
 
 @media only screen and (min-width: 1024px) {
   #products {

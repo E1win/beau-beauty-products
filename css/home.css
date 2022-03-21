@@ -114,7 +114,11 @@ h1 {
   background-size: cover;
   background-position: center;
 
-  background-image: url(../img/hero.webp);
+  background-image: linear-gradient(
+      rgba(218, 196, 74, 0.12),
+      rgba(218, 196, 74, 0.12)
+    ),
+    url(../img/about-us.webp);
 }
 
 .about-us__content {

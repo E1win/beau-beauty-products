@@ -80,7 +80,7 @@ section {
   padding-bottom: 4rem;
 }
 
-/* Text */
+/* TEXT */
 
 h1 {
   font-weight: 700;
@@ -130,11 +130,15 @@ p {
   line-height: 1.7rem;
 }
 
-.avoid-wrap {
+/*
+Add class to long word so we can force it to break at
+a chosen part. ( instead of randomly )
+*/
+.avoid-break {
   display: inline-block;
 }
 
-/* Buttons / Anchors */
+/* BUTTONS / ANCHORS */
 
 button {
   background: none;
@@ -174,13 +178,13 @@ a {
   justify-content: center;
 }
 
-/* Lists */
+/* LISTS */
 
 ul {
   list-style: none;
 }
 
-/* Others */
+/* OTHER */
 
 .hide-on-mobile {
   display: none;
@@ -486,7 +490,7 @@ footer p {
     url(../img/hero.webp); */
   background-size: cover;
   background-position: right;
-  height: 25vh;
+  height: 30vh;
   min-height: 10rem;
 
   /* Navigationbar compensation */
@@ -519,7 +523,10 @@ footer p {
 .product-image {
   display: block;
 
-  width: 100%;
+  /* Set width / height to avoid layout shift */
+  min-width: 12rem;
+  min-height: 12rem;
+
   max-width: 100%;
   margin: 0 auto;
   margin-bottom: 1rem;
@@ -671,6 +678,10 @@ footer p {
   h2:after {
     left: 1rem;
     transform: translateX(0);
+  }
+
+  .subpage-title {
+    font-size: 2.1rem;
   }
 }
 

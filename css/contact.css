@@ -34,16 +34,6 @@ h1 {
   margin: 0 auto;
 }
 
-.subpage-title {
-  text-align: center;
-  margin-bottom: 3.5rem;
-}
-
-.subpage-title::after {
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .contact__inputscontainer {
   height: 100%;
 
@@ -90,6 +80,10 @@ label {
   width: 100%;
 
   transition: background-color 0.3s, color 0.3s;
+}
+
+#hero {
+  background-image: url(../img/contact-hero.webp);
 }
 
 .contact__submit:hover,

@@ -130,6 +130,16 @@ p {
   line-height: 1.7rem;
 }
 
+.subpage-title-center {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.subpage-title-center::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /*
 Add class to long word so we can force it to break at
 a chosen part. ( instead of randomly )
@@ -534,6 +544,14 @@ footer p {
   box-shadow: 0.05rem 0.05rem 2rem rgb(224, 224, 224);
 }
 
+/* 
+Add border on image when anchor is focussed
+Default browser behaviour is not clear enoug here
+*/
+a:focus .product-image {
+  border: 0.1rem solid #111;
+}
+
 .product-textbox {
   border-left: 0.25rem solid var(--color-alt-main);
   padding: 0.5rem 0.8rem 0 0.5rem;
@@ -556,11 +574,11 @@ footer p {
   font-size: 0.85rem;
 }
 
+/* BESTSELLING */
+
 .bestselling {
   border: 0.3rem solid rgb(241, 235, 151);
   border-radius: 0.7rem;
-
-  /* box-shadow: 0.05rem 0.05rem 2rem rgb(241, 235, 151); */
 }
 
 .bestselling .product-textbox {

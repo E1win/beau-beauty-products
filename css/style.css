@@ -384,6 +384,8 @@ ul {
   visibility: hidden;
 }
 
+/* OPEN MOBILE NAVIGATION */
+
 .navbar__mobile-opened .navbar__mobile-link {
   visibility: visible;
 }
@@ -617,7 +619,7 @@ a:focus .product-image {
   text-align: center;
 
   background-color: #fff;
-  border: 0.2rem solid #ddd;
+  border: 0.15rem solid #ddd;
 
   margin: 0 1rem 2rem 1rem;
   padding: 1rem 0;

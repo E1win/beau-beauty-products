@@ -10,8 +10,6 @@ const btnCloseMobileNav = document.getElementById(
 ////////////////////////////////////
 // FUNCTIONS
 
-// NAVIGATION
-
 const navOpen = function () {
   navMobile.classList.add("navbar__mobile-opened");
 };
@@ -19,8 +17,6 @@ const navOpen = function () {
 const navClose = function () {
   navMobile.classList.remove("navbar__mobile-opened");
 };
-
-// INFORMATION ICONS
 
 ////////////////////////////////////
 // EVENT LISTENERS
